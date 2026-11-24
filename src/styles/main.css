@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+@theme {
+  /* 8pt 间距系统 */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  /* 字阶 14-28 */
+  --fs-xs: 14px;
+  --fs-sm: 15px;
+  --fs-base: 16px;
+  --fs-md: 18px;
+  --fs-lg: 22px;
+  --fs-2xl: 28px;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* slate 中性色阶 */
+  --c-bg: #f8fafc;
+  --c-panel: #ffffff;
+  --c-panel-2: #f1f5f9;
+  --c-border: #e2e8f0;
+  --c-text: #1e293b;
+  --c-text-2: #64748b;
+  --c-text-3: #94a3b8;
+
+  /* 主色稀有：仅关键操作与选中态 */
+  --c-primary: #b45309;
+  --c-primary-hover: #92400e;
+  --c-primary-soft: #fef3c7;
+  --c-danger: #dc2626;
+  --c-danger-soft: #fee2e2;
+  --c-success: #15803d;
+  --c-warn: #d97706;
+
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06);
+  --shadow: 0 4px 12px rgb(15 23 42 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(15 23 42 / 0.12);
+
+  --t-fast: 0.15s ease;
+  --t: 0.2s ease;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family:
+    'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+  font-size: var(--fs-xs);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-border);
+  border-radius: var(--radius-sm);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
